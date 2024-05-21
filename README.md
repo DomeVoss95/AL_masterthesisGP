@@ -1,6 +1,7 @@
-Active Learning Search for pMSSM with Gaussian Processes
+# Active Learning Search for pMSSM with Gaussian Processes
 
-A brief description of what this project does and its purpose.
+A Toy Model to understand the Active Learning procedure of Gaussian Processes with Batch Acquisiton.
+
 Table of Contents
 
     Installation
@@ -10,41 +11,35 @@ Table of Contents
     License
     Acknowledgements
 
-Installation
+# Installation
 
+Set up Conda environment. 
 Instructions on how to install and set up the project locally. For example:
 
 bash
 
-# Clone the repository
-git clone https://github.com/your-username/your-repository.git
+Clone the repository
+    git clone https://github.com/your-username/your-repository.git
 
-# Navigate to the project directory
-cd your-repository
+Navigate to the project directory
+ cd your-repository
 
-# Install dependencies
-npm install
+Install dependencies
+    npm install
 
-Usage
+Install environment
+    conda env create --file env.yaml -n env
+    
 
-Provide examples and instructions for using the project. For example:
+# Usage
 
-bash
+    Use iterative_batch_selector to creates the new batch points.
+    To check, wether GP works appropiatly: look at the confidence difference 
+        if it's all over the place, retrain and add batch points
+        if the mean is almost constant and only peaking at the points, do same
 
-# Start the application
-npm start
 
-# Run tests
-npm test
-
-You can also include screenshots, code snippets, or other relevant details to help users understand how to use your project.
-Features
-
-    List of features
-    Another feature
-    Yet another feature
-
-Contributing
+# Contributing
 
 Guidelines for contributing to the project. For example:
 
@@ -55,14 +50,11 @@ Guidelines for contributing to the project. For example:
     Push to the branch (git push origin feature-branch).
     Open a pull request.
 
-License
+# License
 
-Include the project's license. For example:
+This project is licensed under the TUM and ATLAS License - see the LICENSE file for details.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-Acknowledgements
+# Acknowledgements
 
-Acknowledge any individuals, libraries, or resources that helped in the development of this project. For example:
-
-    Person or resource
-    Another person or resource
+    Dr. Jonas Würzinger
+    Prof. Dr. Lukas Heinrich
