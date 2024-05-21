@@ -1,4 +1,4 @@
-Project Title
+Active Learning Search for pMSSM with Gaussian Processes
 
 A brief description of what this project does and its purpose.
 Table of Contents
